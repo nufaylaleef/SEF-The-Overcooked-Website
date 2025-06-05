@@ -60,7 +60,7 @@ The OverCooked System is a web-based recipe platform developed as part of the **
 
 ## 📄 Documentation
 
-All diagrams (UML, ERD, Component, Activity), screen designs, and pseudocode are included in the full [System Documentation PDF](./SEF_Final_Report_TT2L_Group7.pdf).
+All diagrams (UML, ERD, Component, Activity), screen designs, and pseudocode are included in the full System Documentation PDF (not uploaded).
 
 ## 📜 License
 
