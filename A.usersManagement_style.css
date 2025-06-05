@@ -1,0 +1,200 @@
+/* ============ User Management Page ============ */
+.users-content {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.users-content h2 {
+    font-size: 20px;
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+table thead th {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* ============ Action Buttons ============ */
+.edit-btn, .delete-btn {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+/* ============ Editable Row Styling (Dropdown Edit Form) ============ */
+.hidden {
+    display: none;
+}
+
+/* Edit box container (dropdown form) */
+.edit-box {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 400px;
+    margin: 10px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Edit form fields */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Password field styling */
+.password-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.password-field input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.password-field .toggle-pass {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .edit-box {
+        width: 90%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    .edit-btn, .delete-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+/* Editable Row Styling - Left-aligned */
+.edit-box {
+    background: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 350px;
+    margin-left: 20px; /* Aligns to the left */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Edit form fields */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Password field styling */
+.password-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.password-field input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.password-field .toggle-pass {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+/* Save and Cancel Buttons */
+.btn-save {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+}
+

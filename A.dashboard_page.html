@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./A.global.css">
+    <link rel="stylesheet" href="./A.dashboard_style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="./A.dashboard_page.html">
+                    <img src="./brand_logo.svg" alt="The OverCooked" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                    <li><a href="./A.adminProfile_page.php">Admin Profile</a></li>
+                    <li class="divider">Manage</li>
+                    <li><a href="./A.recipes_page.php">Recipes</a></li>
+                    <li><a href="./A.comments_page.php">Comments</a></li>
+                    <li><a href="./A.usersManagement_page.php">User Accounts</a></li>
+                    <li class="divider">System</li>
+                    <li><a href="./A.backups_page.php">Backups and Recovery</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Header Bar -->
+            <header class="header-bar">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                </div>
+                <div class="right">
+                    <form method="POST" action="logout.php" style="display:inline;">
+                        <button type="submit" id="logout-button" class="logout-btn">Logout</button>
+                    </form>
+                    <span class="icon"><a href ="./A.dashboard_page.html">🏠</a></span>
+                    <span class="icon"><a href ="./A.adminProfile_page.php">👤</a></span> <!-- Profile Placeholder -->
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <section class="dashboard-content">
+                <p>Welcome to the Admin Dashboard! This is where you'll find all the key metrics and summaries.</p>
+                <!-- Add additional dashboard widgets or sections here -->
+            </section>
+        </div>
+    </div>
+</body>
+</html>

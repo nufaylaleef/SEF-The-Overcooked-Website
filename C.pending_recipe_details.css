@@ -1,0 +1,87 @@
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden; /* Add this */
+}
+
+.recipe-details-image {
+    display: block;
+    width: 300px; /* Fixed width */
+    height: 300px; /* Fixed height */
+    margin: 20px auto;
+    border-radius: 8px;
+    object-fit: cover; /* This will ensure the image covers the area */
+}
+
+/* Form styling */
+#editRecipeForm {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#editRecipeForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+}
+
+#editRecipeForm input[type="text"],
+#editRecipeForm select,
+#editRecipeForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+}
+
+#editRecipeForm textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.button-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #346D4F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Newsreader", sans-serif;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #FFC800;
+}
+
+/* Recipe details text styling */
+h2 {
+    color: #346D4F;
+    font-family: "Newsreader", sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-family: "Inter", sans-serif;
+}
+
+p strong {
+    color: #346D4F;
+}

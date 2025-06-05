@@ -1,0 +1,225 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #346D4F;
+    height: auto;
+}
+
+
+li, a{
+    font-family: "Newsreader", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navigation_link {
+    list-style: none;
+}
+
+.navigation_link, li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navigation_link, li, a {
+    transition: all 0.3s ease 0s;
+}
+
+.navigation_link, li, a:hover {
+    color: #FFC800;
+}
+
+
+.search-form {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #346D4F;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: none;
+    padding: 0;
+    transition: all 1s;
+}
+
+.search-form input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    font-family: "Newsreader", sans-serif;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    transition: all 1s;
+}
+
+.search-form:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+.search-form:hover input {
+    display: block;
+}
+
+.search-form:hover .fa {
+    color: #346D4F;
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-form:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+.search-form:hover input {
+    display: block;
+}
+
+.search-form:hover .fa {
+    color: #346D4F;
+}
+
+/* Recipe Grid Styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.recipe-card h3 {
+    font-family: "Newsreader", sans-serif;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.recipe-card p {
+    font-family: "Newsreader", sans-serif;
+    padding-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    font-size: 1em;
+    color: #333;
+}
+
+
+.recipes-view {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto; /* Added margin for separation from header */
+}
+
+.recipes-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Newsreader", sans-serif; /* Added to match header */
+    font-weight: 300; /* Added to match header */
+    color: #333; /* Darken the title */
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+.recipe-card:hover {
+    transform: scale(1.03);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-name {
+    font-size: 1.2em;
+    margin: 10px;
+    font-family: "Inter", sans-serif; /* Added to match input */
+    font-weight: 200;
+    color: #333;
+}
+
+.recipe-details {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0 10px 10px 10px;
+    font-family: "Inter", sans-serif; /* Added to match input */
+    font-weight: 200;
+}
+
+#details-button {
+    background-color: #2a5a40;
+    font-family: "Newsreader", sans-serif;
+    color: #ffffff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0 auto 15px; /* Center horizontally */
+    display: block; /* Ensure it takes full width of its container */
+    font-size: 14px;
+    font-weight: bold;
+    width: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#details-button:hover {
+    background-color: #FFC800;
+}

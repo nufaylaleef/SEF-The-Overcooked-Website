@@ -1,0 +1,179 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c342c; /* Set background to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main container to hold image and login box */
+.main-container {
+    display: flex;
+    align-items: stretch; /* Ensure both sides stretch to the same height */
+    max-width: 800px; /* Adjust as needed */
+    width: 100%;
+    height: 80vh; /* Set a height for the main container */
+    background-color: #ffffff;
+    box-shadow: 0 0 25px #000000; /* Optional: Add shadow for depth */
+    border-radius: 20px; /* Rounded corners */
+}
+
+/* Image container */
+.image-container {
+    flex: 1; /* Take up half of the available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure the image doesn't overflow */
+    background-color: #ffffff; /* Optional: Fallback background color */
+    border-radius: 20px 0px 0px 20px; /* Rounded corners on the left side */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+/* Login container */
+.container {
+    flex: 1; /* Take up half of the available space */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 20px 20px 0; /* Rounded corners on the right side */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Toggle Links */
+.toggle-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+    margin-bottom: 20px;
+}
+
+.toggle-links a {
+    color: #426B1F; /* Default link color */
+    text-decoration: none; /* Remove underline by default */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.toggle-links a.active {
+    color: #FFC800; /* Active link color */
+    text-decoration: underline; /* Underline active link */
+}
+
+.toggle-links a:hover {
+    color: #FFC800; /* Hover color */
+}
+
+/* Form styling */
+.form {
+    display: none; /* Hide forms by default */
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form.active {
+    display: flex; /* Show active form */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Input fields */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #606c38;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #FFC800;
+    font-weight: bold;
+}
+
+p {
+    color: #777;
+    margin: 10px 0;
+}
+
+a {
+    color: #FFC800;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.toggle-password:hover {
+    color: #FFC800;
+}
+
+/* Password Container */
+.password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px 0; /* Add spacing between password fields */
+}
+
+/* Toggle Password Button */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #426B1F;
+    font-size: 14px;
+    padding: 0;
+}
+
+.toggle-password:hover {
+    color: #FFC800;
+}

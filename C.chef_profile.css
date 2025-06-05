@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.button-container a {
+    display: inline-block;
+    width: auto;
+    padding: 12px 20px;
+    background-color: #346D4F;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.button-container a:hover {
+    background-color: #3d7457;
+    color: #FFC800;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures buttons do not overflow */
+    justify-content: center; /* Centers buttons */
+    gap: 15px; /* Adds spacing between buttons */
+    margin-top: 20px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #346D4F;
+    height: auto;
+}
+
+li, a {
+    font-family: "Newsreader", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navigation_link {
+    list-style: none;
+}
+
+.navigation_link, li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navigation_link, li, a {
+    transition: all 0.3s ease 0s;
+}
+
+.navigation_link, li, a:hover {
+    color: #FFC800;
+}
+
+.search-form {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #346D4F;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: none;
+    padding: 0;
+    transition: all 1s;
+}
+
+.search-form input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    font-family: "Newsreader", sans-serif;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    transition: all 1s;
+}
+
+.search-form:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+.search-form:hover input {
+    display: block;
+}
+
+.search-form:hover .fa {
+    color: #346D4F;
+}
+
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-form:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+.search-form:hover input {
+    display: block;
+}
+
+.search-form:hover .fa {
+    color: #346D4F;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    overflow: visible; /* Ensures no hidden content */
+}
+
+.view-submit-button{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #346D4F;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.view-submit-button:hover {
+    background-color: #3d7457;
+    color:#FFC800
+}
+
+.profile-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+#change-picture-label {
+    display: none;
+}
+
+.profile-container.editing #change-picture-label {
+    display: block;
+}
+
+#image-upload {
+    display: none; 
+}
+
+
+.header-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-details h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #333;
+}
+
+#edit-button {
+    background-color: #FFC800;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#edit-button:hover {
+    background-color: #2a5a40; 
+}
+
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+
+.form-group label {  
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #555;
+    
+    margin-bottom: 5px; 
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+}
+
+.form-group input[type="password"] {
+    padding-right: 40px; /* Add padding to make space for the eye icon */
+    
+}
+
+.form-group input:read-only,
+.form-group select:read-only,
+.profile-container.editing .form-group input:read-only,
+.profile-container.editing .form-group select:read-only { 
+    background-color: #eee;
+    cursor: text;
+    border: 1px solid #ddd; 
+}
+
+/* Hide the eye icon by default */
+.password-toggle {
+    display: none;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+    display: none;
+}
+
+/* Show the eye icon only when in editing mode */
+.profile-container.editing .password-toggle {
+    display: block;
+}
+
+/* Show the eye icon only when in editing mode */
+.profile-container.editing .password-toggle {
+    display: block;
+}
+
+
+.profile-container.editing .form-group input,
+.profile-container.editing .form-group select { 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: text;
+}
+
+
+.profile-container.editing .form-group input,
+.profile-container.editing .form-group select { 
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: text;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Recipe Card */
+.recipe-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px #0000001a;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px #00000033;
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.details-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #346D4F;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.details-button:hover {
+    background-color: #478a6c;
+}
+
+/* Recipe Details */
+.recipe-details-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+

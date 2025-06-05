@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #346D4F;
+    height: auto;
+}
+
+/* Navigation Words in Header*/
+li, a{
+    font-family: "Newsreader", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.navigation_link {
+    list-style: none;
+}
+
+.navigation_link, li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navigation_link, li, a {
+    transition: all 0.3s ease 0s;
+}
+
+.navigation_link, li, a:hover {
+    color: #FFC800;
+}
+
+/* Search Bar in Header*/
+form {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: #346D4F;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: none;
+    padding: none;
+    transition: all 1s;
+}
+
+input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    font-family: "Newsreader", sans-serif;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+.fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1em;
+    transition: all 1s;
+}
+
+form:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+form:hover input {
+    display: block;
+}
+
+form:hover .fa {
+    color: #346D4F;
+}
+
+/* To remove the X button*/
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+/* Hero Section */
+main.page{
+    margin-top: 0px;
+}
+.hero {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto; /* Center the container */
+}
+
+.hero-text h1 {
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    line-height: 1.1;
+}
+
+/*Making a button*/
+button{
+    margin-top: 50px;
+    padding: 9px 25px;
+    color: #ffffff;
+    background-color: #FFC800;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 19px;
+    font-family: 'Newsreader', serif;
+}
+
+button:hover{
+    background-color: #346D4F;
+}
+
+.button-hero{
+    margin-top: 30px;
+}
+
+.recipe-grid {
+    display: flex;             /* Enable Flexbox */
+    flex-direction: column;    /* Arrange items vertically */
+    justify-content: center;
+    align-items: flex-start;  /* Align items to the left */
+    /* If you want some space between image and text: */
+    gap: 10px;                /* Adjust as needed */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+}
+
+.recipe-grid img {
+    width: 100%;            /* Image takes full width of container */
+    height: auto;           /* Maintain aspect ratio */
+    display: block;        /* Prevents a small space below image sometimes */
+}
+
+.recipe-grid h3 {
+    margin-top: 0;          /* Remove default h3 top margin */
+}
+
+.recipe-grid p {
+    margin-bottom: 0;       /* Remove default p bottom margin */
+    text-align: justify;
+}
+
+.chickpea-grid, .lasagna-ingredients-grid {
+    font-family: "Inter", serif;
+    font-weight: 500px;
+    font-style: normal;
+    margin-inline:auto;
+    padding: 10px; /* Optional padding */
+    border-radius: 8px; /* Optional rounded corners */
+    box-sizing: content-box; /* Include padding and border in element's total width and height */
+}
+
+.about-us {
+    font-family: "Inter", serif;
+    padding: 20px; /* Add some padding around the section */
+    margin: 80px;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Spacing between columns */
+    max-width: 1080px; /* Or a suitable width for your content */
+    margin: 0 auto; /* Center the content */
+}
+
+
+.about-content h2 {
+    font-size: 1.5em; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    text-align: justify; /* Justify the text */
+    hyphens: auto; /* Enable hyphenation for better text flow */
+    margin-bottom: 15px; /* Add space between paragraphs */
+}
